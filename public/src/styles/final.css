@@ -1,0 +1,93 @@
+.container {
+  background-color: transparent;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-left {
+  background-color: transparent;
+  display: none;
+}
+
+.container .container-middle .header {
+  display: none;
+}
+
+.container .container-middle .main {
+  background-color: transparent;
+}
+
+.container .container-middle .footer {
+  display: none;
+}
+
+.container .container-right {
+  display: none;
+}
+
+.container-movie {
+  background-image: url("/src/images/bg.png");
+  height: 1920px;
+  width: 1080px;
+  max-height: 100vh;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border: 3px solid white;
+}
+
+.container-movie #imagem-container {
+  width: 500px;
+  margin-top: 48%;
+  margin-bottom: 60px;
+}
+
+.container-movie #imagem-container .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-movie #title-container {
+  width: 100%;
+  margin-bottom: 15rem;
+}
+
+.container-movie #title-container #title {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container-movie #title-container #title span {
+  font-size: 4rem;
+  color: black;
+}
+
+.container-movie #plot-container {
+  width: 100%;
+}
+
+.container-movie #plot-container #plot {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container-movie #plot-container #plot span {
+  font-size: 3rem;
+  color: white;
+}
+/*# sourceMappingURL=final.css.map */

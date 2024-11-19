@@ -1,0 +1,139 @@
+@import "./scss/colors";
+
+.container{
+    background-color: transparent;
+    flex-direction: column;
+    .container-left{
+        background-color: transparent;
+        display: none;
+    }
+    .container-middle{
+        .header{
+            display: none;
+        }
+        .main{
+            background-color: transparent;
+        }        
+        .footer{
+            display: none;
+        }
+    }
+    .container-right{
+        display: none;
+    }
+}
+.container-body-shopee{
+    background-color: $searchEndColor;
+    height: 1520px;
+    width: 1080px;
+    max-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .container-final-shopee{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        .imagem-container-shopee{
+            margin-top: 15%;
+            width: 85%;
+            border-radius: 30px;
+            background-color: white;
+            padding: 2rem 2rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+            height: 80%;
+            position: relative;
+            .imagem-shopee{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0.2rem auto 5rem auto;
+                height: 60%;
+                min-height: 60%;
+                .img-shopee{
+                    margin:auto;
+                    width: 100%;
+                    height: 80%;
+                }
+            }
+            .info-shopee{
+                display: block;
+                height: 40%;
+                margin-top: -4rem;
+                .indicado-shopee{
+                    display: inline-block;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        background-color: orangered;
+                        color: wheat;
+                        font-size: 3rem;
+                        left: 0;
+                        top: 15px;
+                        padding: 5px 10px;
+                    }
+                    .nomeProduto-shopee{
+                        text-align: left;
+                        font-size: 5rem;
+                        margin-bottom: 1rem;
+                        font-weight: 900;
+                        text-indent: 160px;
+                    }
+                }
+                .precos-shopee{
+                    display: block;
+                    margin-top: 4rem;
+                    left: 0;
+                    .pNovo-shopee{
+                        font-size: 6rem;                        
+                        font-weight: 900;
+                        color: orangered;
+                        width: fit-content;
+                    }
+                    .pAntigo-shopee{
+                        display: block;
+                        text-decoration: line-through;
+                        font-size: 3.5rem;
+                        width: fit-content;
+                        color: rgb(66, 66, 66);
+                    } 
+                }
+            }    
+        }
+        .classification-shopee{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .stars{
+                font-size: 3rem;
+                .nota{
+                    margin-left: 1rem;
+                }
+            }
+            .vendido{
+                span{
+                    font-size: 3rem;
+                }
+            }
+            .share-shopee{
+                display: flex;
+                justify-content: end;
+                margin-right: 2rem;
+                span{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}

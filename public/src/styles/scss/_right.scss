@@ -1,0 +1,38 @@
+.profile{
+    width: 100%;
+    background-color: $color2;
+    display: flex;
+    padding-left: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    .info-profile{
+
+        .image{
+            border: 2px solid $color1;
+            border-radius: 5px;
+            margin-top: 50px;
+            width: 100px;
+            margin-bottom: 1.5rem;
+            img{
+                width: 100%;
+            }
+        }
+        .info{
+
+            h2{
+                font-size: 2rem;
+                color: $color1;
+                font-weight: 100;
+                line-height: 1.1;
+                letter-spacing: .2rem;
+                margin-bottom: 1.5rem;
+            }
+            span{
+                font-size: 1.2rem;
+                color: $color1;
+                font-weight: 100;
+                letter-spacing: .1rem;
+            }
+        }
+    }
+}

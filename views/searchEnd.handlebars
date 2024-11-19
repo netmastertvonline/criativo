@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/final.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-movie">
+        <div id="imagem-container">
+            <div class="image">
+                <img src="{{items.imgUrl}}" alt="" srcset="">
+            </div>
+        </div>
+        <div id="title-container">
+            <div id="title">
+                <span>{{items.title}}</span>
+            </div>
+        </div>
+        <div id="plot-container">
+            <div id="plot">
+                <span>{{items.plot}}</span>
+            </div>
+        </div>
+        <div id="genres-container"></div>
+        {{#each items.genres}}
+        <div class="genre">
+            <span>{{this}}</span>
+        </div>
+        {{/each}}
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

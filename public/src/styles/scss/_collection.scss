@@ -1,0 +1,85 @@
+.container-collection{
+    color: $color1;
+    display: flex;
+    min-width: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        margin: 6rem 0 3rem 0;
+        font-size: 3rem;
+    }
+    ul{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+            list-style: none;
+            width: 280px;
+            min-width: 280px;
+            border: 1px solid wheat;
+            margin: 2px;
+            .collection{
+                background-color: $color2;
+                width: 100%;
+                //height: 380px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                .image{
+                    margin: auto;
+                    width: 180px;
+                    height: 150px;
+                    margin-bottom: 1rem;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .np{
+                        font-size: 1rem;
+                        //margin-bottom: -2rem;
+                        text-transform: none;
+                    }
+                    h2{
+                        font-size: 5rem;
+                    }
+                    .pap{
+                        font-size: 0.8rem;
+                        text-decoration: line-through;
+                        text-indent: 1rem;
+                    }
+                    .pp{
+                        text-transform: none;
+                        font-size: 1.2rem;
+                    }
+                    .cartao{
+                        text-transform: none;
+                    }
+                    .insta{
+                        text-transform: none;
+                    }
+                    .gostou{
+
+                    }    
+                    a{
+                        font-size: 0.8rem;
+                        color: aliceblue;
+                        cursor: copy;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+}

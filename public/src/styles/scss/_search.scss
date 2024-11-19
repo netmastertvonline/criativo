@@ -1,0 +1,74 @@
+.container-busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .h1-container{
+        margin: 6rem 0 3rem 0;
+        font-size: 3rem;
+        text-align: center;
+        h1{
+            color: $color1;
+            font-size: 2.5rem;
+        }
+    }
+    .form{
+        border-radius: 5px;
+        background-color: $color4;
+        padding: 2rem;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.301);
+        width: 80%;
+        height: 80%;
+        .option{
+            display: block;
+            color: $color1;
+            margin-bottom: 20px;
+            h2{
+                color: $color1;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            #options{
+                display: block;
+                font-size: 1.2rem;
+                gap: 10px;
+                label{
+                    margin-bottom: 10px;
+                    display: flex;
+                    width: fit-content;
+                    cursor: pointer;
+                    input{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .cod{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                color: $color1;
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            textarea{
+                resize: none;
+                padding: 0.5rem;
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            textarea:focus{
+                outline: none;
+            }
+            .busca{
+                input{
+                    width: 100%;
+                    padding: 1rem 0;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
