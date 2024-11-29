@@ -22,6 +22,7 @@
         display: none;
     }
 }
+
 .container-movie{
     background-image: url("/src/images/bg.png");
     height: 1920px;
@@ -33,14 +34,28 @@
     align-items: center;
     margin: auto;
     border: 3px solid white;
-
+    
     #imagem-container{
-        width: 500px;
+        width: 550px;
         margin-top: 48%;
-        margin-bottom: 60px;
-        .image{
-
+        margin-bottom: 0px;
+        padding: 10px;
+        #logo{
+            position: absolute;
+            left: 20%;
+            top: 22%;
+            width: 700px;
+            opacity: 0.8;
             img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .image{
+            height: 750px;
+            
+            img{
+                border-radius: 80px;
                 width: 100%;
                 height: 100%;
             }
@@ -49,12 +64,15 @@
 
     #title-container{
         width: 100%;
-        margin-bottom: 15rem;
+        margin-bottom: 5rem;
+        
         #title{
             margin: 0 auto ;
+            background-color: white;
             width: 80%;
-            padding: 1rem;
+            padding: 3rem 1rem;
             text-align: center;
+            border-radius: 10px;
             span{
                 font-size: 4rem;
                 color: rgb(0, 0, 0);
@@ -64,14 +82,108 @@
 
     #plot-container{
         width: 100%;
+        min-height: 400px;
+        max-height: 400px;
         #plot{
             margin: 0 auto ;
             width: 80%;
             padding: 1rem;
             text-align: center;
             span{
+                font-size: 4rem;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    #genres-container{
+        margin-top: 58px;
+        width: 100%;
+        #genres{
+            margin-left: 30%;
+            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            .genre{
+                font-size: 3.5rem;
+                color: white;
+            }
+        }
+    }
+}
+
+
+.container-movie2{
+    background-image: url("/src/images/bg2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1920px;
+    width: 1080px;
+    max-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border: 3px solid white;
+
+    #imagem-container2{
+        width: 600px;
+        margin-top: 24%;
+        margin-bottom: 140px;
+        .image2{
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    #title-container2{
+        width: 100%;
+        margin-bottom: 10rem;
+        #title2{
+            margin: 0 auto ;
+            width: 80%;
+            padding: 1rem;
+            text-align: center;
+            span{
+                font-size: 5rem;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+
+    #plot-container2{
+        width: 100%;
+        min-height: 175px;
+        max-height: 175px;
+        #plot2{
+            margin: 0 auto ;
+            width: 77%;
+            padding: 1rem;
+            text-align: center;
+            span{
                 font-size: 3rem;
                 color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    #genres-container2{
+        margin-top: 185px;
+        width: 100%;
+        #genres2{
+            margin-left: 40%;
+            gap: 10px;
+            display: flex;
+            list-style: none;
+            .genre2{
+                font-size: 3.2rem;
+                color: white;
             }
         }
     }

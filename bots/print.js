@@ -10,12 +10,25 @@ function generateRandomCode(length = 8) {
     return code;
 }
 
-module.exports = async function print() {
+module.exports = async function print(layout) {
     let url;
 
     const cod = generateRandomCode(); 
 
-    url = "http://localhost:3000/searchEnd";
+    switch (layout) {
+        case "1":
+            url = "http://localhost:3000/searchEnd";
+            break;
+        case "2":
+            url = "http://localhost:3000/searchEnd2";
+            break;
+        case "3":
+            url = "http://localhost:3000/searchEnd3";
+            break;
+        default:
+            url = "http://localhost:3000/searchEnd";
+            break;
+    }
     
 
     const browser = await puppeteer.launch({ headless: "new" });

@@ -7,6 +7,7 @@ router.get("/home", Controller.home)
 router.get("/search", Controller.search)
 router.post("/search", Controller.searchPost)
 router.get("/searchEnd", Controller.searchEnd)
+router.get("/searchEnd2", Controller.searchEnd2)
 
 
 module.exports = router

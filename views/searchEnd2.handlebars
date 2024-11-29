@@ -10,29 +10,26 @@
 </head>
 
 <body>
-    <div class="container-movie">
-        <div id="imagem-container">
-            <div class="image">
+    <div class="container-movie2">
+        <div id="imagem-container2">
+            <div class="image2">
                 <img src="{{items.imgUrl}}" alt="" srcset="">
             </div>
-            <div id="logo">
-                <img src="/src/images/logo.png" alt="" srcset="">
-            </div>
         </div>
-        {{!-- <div id="title-container">
-            <div id="title">
+        <div id="title-container2">
+            <div id="title2">
                 <span>{{items.title}}</span>
             </div>
-        </div> --}}
-        <div id="plot-container">
-            <div id="plot">
+        </div>
+        <div id="plot-container2">
+            <div id="plot2">
                 <span>{{items.plot}}</span>
             </div>
         </div>
-        <div id="genres-container">
-            <ul id="genres">
+        <div id="genres-container2">
+            <ul id="genres2">
                 {{#each items.genres}}
-                    <li class="genre">
+                    <li class="genre2">
                         {{#if @first}}
                             {{this}},
                         {{else}}
@@ -43,9 +40,6 @@
             </ul>
         </div>
     </div>
-    </div>
-    </div>
-
 </body>
 
 </html>

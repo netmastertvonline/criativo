@@ -1,4 +1,4 @@
-const buscarMagazineLuiza = require("../bots/buscarMagazineLuiza");
+const searchInfo = require("../bots/search-info");
 const print = require("../bots/print");
 
 let items;
@@ -14,28 +14,24 @@ module.exports = class Controller {
     }
 
     static async searchPost(req, res, next) {
-        let {option, cod} = req.body;
+        let {option, layout, cod} = req.body;
         let tratado = cod.trim().trimEnd().split(",")
         
-        try {
-            if (tratado.length === 1 && tratado[0] === "") {
-                
+        try {                
                 if (option === "1") {
                     for (let idx = 0; idx < tratado.length; idx++) {
                         
-                        items = await buscarMagazineLuiza(tratado[idx])
+                        items = await searchInfo(tratado[idx])
                         
                         if (!items) {
-                            // Caso não haja items, interrompe o fluxo e chama o next()
-                            return next(new Error('Items não encontrados'));
+                            next();
                         }
                         
                         if (items && items.title) {
-                            await print()
+                            await print(layout)
                         }
                     }
                 }
-            }
 
         } catch (error) {
             console.log(error);    
@@ -47,6 +43,10 @@ module.exports = class Controller {
 
     static searchEnd(req, res) {
         res.render("searchEnd", { items })
+    }
+
+    static searchEnd2(req, res) {
+        res.render("searchEnd2", { items })
     }
 
 }
